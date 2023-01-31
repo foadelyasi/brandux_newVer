@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title -->
-    <title> برنداکس صفحه لندینگ HTML</title>
+    <title>برنداکس</title>
 
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="/front/assets/images/favicon.ico" />
@@ -73,7 +73,7 @@
                                     <li class="nav-item "> <a class="nav-link " href="/front/#" data-toggle="dropdown">خدمات ما</a>
 
                                     </li>
-                                    <li class="nav-item "> <a {{route('contactUs')}} class="nav-link" href="/front/#" >تماس با ما</a>
+                                    <li class="nav-item "> <a  class="nav-link" href="{{route('store')}}" >فروشگاه</a>
 
                                     </li>
                                 </ul>
@@ -103,16 +103,18 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarNav">
                                     <ul class="navbar-nav">
-                                        <li class="nav-item"> <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">خانه</a>
+                                        <li class="nav-item "> <a class="nav-link  active" href="/front/#" >خانه</a>
 
                                         </li>
-                                        <li class="nav-item"> <a class="nav-link dropdown-toggle" href="{{route('articles')}}" data-toggle="dropdown">مطالب</a>
-
-                                        <li class="nav-item"> <a class="nav-link dropdown-toggle" href="/front/#" data-toggle="dropdown">فروشگاه</a>
+                                        <li class="nav-item "> <a class="nav-link " href="{{route('articles')}}">مطالب</a>
 
                                         </li>
-                                        <li class="nav-item"> <a {{route('contactUs')}} class="nav-link dropdown-toggle" href="/front/#" >تماس با ما</a>
+                                        <li class="nav-item "> <a class="nav-link " href="/front/#" data-toggle="dropdown">خدمات ما</a>
 
+                                        </li>
+                                        <li class="nav-item "> <a  class="nav-link" href="{{route('store')}}" >فروشگاه</a>
+
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>

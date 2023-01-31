@@ -19,30 +19,25 @@
             <div class="col-12 col-lg-6 col-xl-7">
                 <div class="row">
                     <div class="col-12 col-sm-4 navbar-dark">
-                        <h5 class="mb-4 text-white">صفحات</h5>
+                        <h5 class="mb-4 text-white">آشنایی بیشتر </h5>
                         <ul class="navbar-nav list-unstyled mb-0">
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/about-us-1.html">درباره</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/about-us-1.html">درباره ما</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/product-grid.html">فروشگاه</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/product-grid.html">تماس با ما</a>
                             </li>
                             <li class="mb-3 nav-item"><a class="nav-link" href="/front/faq.html">سوالات متداول</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/blog-card.html">وبلاگ</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="/front/contact-us.html">تماس با ما</a>
-                            </li>
+
                         </ul>
                     </div>
                     <div class="col-12 col-sm-4 mt-6 mt-sm-0 navbar-dark">
                         <h5 class="mb-4 text-white">خدمات</h5>
                         <ul class="navbar-nav list-unstyled mb-0">
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/#">نویسنده محتوا</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/#">طراحی سایت</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/#">اسناد</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/#">تولید محتوا</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/login.html">حساب کاربری</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="/front/career.html">شغل</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/login.html">مشاوره تبلیغاتی</a>
                             </li>
                         </ul>
                     </div>

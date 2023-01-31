@@ -23,6 +23,7 @@ use App\Http\Livewire\Admin\Portfolio\Edit as EditPortfolio;
 use App\Http\Livewire\Front\Portfolio\Index as PortfolioList;
 use App\Http\Livewire\Front\Portfolio\Single as PortfolioDetail;
 use App\Http\Livewire\Front\Buying\Basket as ShoppingCart;
+use App\Http\Livewire\Front\Product\ListProduct as Store;
 use App\Http\Livewire\Front\Buying\Checkout;
 use App\Http\Livewire\Front\Buying\Callback as PaymentCallback;
 use App\Http\Livewire\Front\Services\WebDesign as Web;
@@ -103,6 +104,7 @@ Route::get('/user/order/details/{id}',MyOrderDetails::class)->name('user.order.d
 //Front//
 Route::group(['middleware' => ['web']], function () {
 
+    Route::get('/store',Store::class)->name('store');
     Route::get('/product/{slug}',SingleProduct::class)->name('SingleProduct');
     Route::get('/portfolio',PortfolioList::class)->name('portfolioList');
     Route::get('/portfolio/detail/{id}',PortfolioDetail::class)->name('detailPortfolio');

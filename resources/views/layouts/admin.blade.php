@@ -233,24 +233,24 @@
                                     </a>
                                     <div
                                         class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow dropdown-menu-right">
-                                        <a href="#" class="dropdown-item d-flex">
+                                        @if(\App\Models\Order::where('notification',1)->get() >0)
+                                        <a href="{{route('order')}}" class="dropdown-item d-flex">
                                             <div>
-                                                <strong>تعدادی از پست های شما پسندیده شد</strong>
+                                                <strong>سفارش جدیدی برای شما ثبت شده</strong>
                                                 <div class="small text-muted">5 ساعت قبل</div>
                                             </div>
                                         </a>
+
+                                        @endif
+                                       @if(\App\Models\Comment::where('status',0)->get() > 0)
                                         <a href="#" class="dropdown-item d-flex">
                                             <div>
-                                                <strong> 3 دیدگاه جدید</strong>
-                                                <div class="small text-muted">3 ساعت قبل</div>
+                                                <strong>تعدادی نظر جدید ثبت شده</strong>
+
                                             </div>
                                         </a>
-                                        <a href="#" class="dropdown-item d-flex">
-                                            <div>
-                                                <strong> محصول شما شما ثبت شد</strong>
-                                                <div class="small text-muted">45 دقیقه قبل</div>
-                                            </div>
-                                        </a>
+                                            @endif
+
                                         <div class="dropdown-divider"></div>
                                         <a href="#" class="dropdown-item text-center">مشاهده همه اعلان ها</a>
                                     </div>
@@ -261,7 +261,7 @@
                                         <div class="media align-items-center">
 												<span class="avatar avatar-sm rounded-circle"><img
                                                         alt="Image placeholder"
-                                                        src="/admin/assets/img/faces/female/32.jpg"></span>
+                                                        src="/admin/assets/img/faces/male/man.png"></span>
                                             <div class="media-body ml-2 d-none d-lg-block">
                                                 <span class="mb-0 ">کاربر آنلاین</span>
                                             </div>
