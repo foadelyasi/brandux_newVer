@@ -27,6 +27,7 @@ use App\Http\Livewire\Front\Product\ListProduct as Store;
 use App\Http\Livewire\Front\Buying\Checkout;
 use App\Http\Livewire\Front\Buying\Callback as PaymentCallback;
 use App\Http\Livewire\Front\Services\WebDesign as Web;
+use App\Http\Livewire\Front\Question\Index as Question;
 use App\Http\Livewire\Front\Article\Index as Articles;
 use App\Http\Livewire\Front\Article\SingleArticle as SingleArticle;
 use App\Http\Livewire\Admin\UserPannel\Orders\Index as MyOrder;
@@ -114,6 +115,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/checkout/pay',[\App\Http\Controllers\Front\CheckoutController::class,'storeOrder'])->name('pay');
     Route::get('/payment-callback',PaymentCallback::class)->name('paymentCallback');
     Route::get('/contact-us',Contact::class)->name('contactUs');
+    Route::get('/frequently-asked-questions',Question::class)->name('questions');
     Route::get('/web-design-service',Web::class)->name('webDesignService');
     Route::get('/articles',Articles::class)->name('articles');
     Route::get('/articles/{slug}',SingleArticle::class)->name('single.article');
