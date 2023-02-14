@@ -383,5 +383,57 @@
         </div>
     </section>
 
+{{--   articles--}}
 
+    <section>
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div> <span class="badge badge-primary-soft p-2">
+                  <i class="la la-bold ic-3x rotation"></i>
+              </span>
+                        <h2 class="mt-4 mb-0">آخرین مطالب</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6 mr-auto">
+                    <div>
+                        <p class="lead mb-0">آموزش ها ترفند ها و اخبار روز دنیای مدرن را از دست ندهید</p>
+                    </div>
+                </div>
+            </div>
+            <!-- / .row -->
+            <div class="row">
+                @foreach( $articles as $article)
+                    <div class="col-12 col-lg-4 mb-6 mb-lg-0">
+                        <!-- Blog Card -->
+                        <div class="card border-0 bg-transparent">
+                            <div class="position-absolute bg-white shadow-primary text-center p-2 rounded mr-3 mt-3">{{$article->category->title}}
+                                </div>
+                            <img class="card-img-top shadow rounded" src="/front/assets/images/blog/01.png" alt="Image">
+                            <div class="card-body pt-5"> <a class="d-inline-block text-muted mb-2" href="#">{{verta($article->created_at)->format('%A, %d %B %y')}}</a>
+                                <h2 class="h5 font-weight-medium">
+                                    <a class="link-title" href="blog-single.html">{{$article->title}}</a>
+                                </h2>
+                                <p>{{$article->meta_description}}</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pt-0">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item pl-4"> <a href="#" class="text-muted"><i class="ti-comments mr-1 text-primary"></i> 131</a>
+                                    </li>
+                                    <li class="list-inline-item pl-4"> <a href="#" class="text-muted"><i class="ti-eye mr-1 text-primary"></i> 255</a>
+                                    </li>
+                                    <li class="list-inline-item"> <a href="#" class="text-muted"><i class="ti-comments mr-1 text-primary"></i> 14</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div></div>
+                        </div>
+                        <!-- End Blog Card -->
+                    </div>
+                @endforeach
+
+
+            </div>
+        </div>
+    </section>
 </div>

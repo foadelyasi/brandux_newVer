@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="838a778b-0954-4dd0-b222-8154748b0593" name="Changes" comment="product list uncompleted">
+    <list default="true" id="838a778b-0954-4dd0-b222-8154748b0593" name="Changes" comment="product list uncompleted 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/product/list-product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/product/list-product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Front/Home/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Front/Home/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ArticleFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ArticleFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/Footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/Footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/front/question/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/front/question/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +246,8 @@
       <workItem from="1675144164042" duration="1135000" />
       <workItem from="1675145677148" duration="950000" />
       <workItem from="1675146950014" duration="11172000" />
-      <workItem from="1676276789934" duration="6125000" />
+      <workItem from="1676276789934" duration="7231000" />
+      <workItem from="1676367491121" duration="10429000" />
     </task>
     <task id="LOCAL-00001" summary="commit all project">
       <created>1675147885492</created>
@@ -257,7 +263,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675181696861</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="product list uncompleted 2">
+      <created>1676303805350</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676303805350</updated>
+    </task>
+    <task id="LOCAL-00004" summary="product list uncompleted 2">
+      <created>1676303876544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676303876544</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +297,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit all project" />
     <MESSAGE value="product list uncompleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="product list uncompleted" />
+    <MESSAGE value="product list uncompleted 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="product list uncompleted 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/livewire/front/home/index.blade.php</url>
+          <line>40</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

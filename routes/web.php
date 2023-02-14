@@ -8,6 +8,8 @@ use App\Http\Controllers\Admin\HomeController;
 use App\Http\Livewire\Front\Home\Index;
 use App\Http\Livewire\Front\Product\SingleProduct;
 use App\Http\Livewire\Front\Contact\Index as Contact;
+use App\Http\Livewire\Front\AboutUs\Index as About;
+use App\Http\Livewire\Front\Rules\Index as Rules;
 use App\Http\Livewire\Admin\Category\Index as Category;
 use App\Http\Livewire\Admin\Product\Index as Product;
 use App\Http\Livewire\Admin\Articles\Create as CreateArticle ;
@@ -115,6 +117,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/checkout/pay',[\App\Http\Controllers\Front\CheckoutController::class,'storeOrder'])->name('pay');
     Route::get('/payment-callback',PaymentCallback::class)->name('paymentCallback');
     Route::get('/contact-us',Contact::class)->name('contactUs');
+    Route::get('/about-us',About::class)->name('aboutUs');
+    Route::get('/rules',Rules::class)->name('rules');
     Route::get('/frequently-asked-questions',Question::class)->name('questions');
     Route::get('/web-design-service',Web::class)->name('webDesignService');
     Route::get('/articles',Articles::class)->name('articles');

@@ -21,11 +21,11 @@
                     <div class="col-12 col-sm-4 navbar-dark">
                         <h5 class="mb-4 text-white">آشنایی بیشتر </h5>
                         <ul class="navbar-nav list-unstyled mb-0">
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/about-us-1.html">درباره ما</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="{{route('aboutUs')}}">درباره ما</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/product-grid.html">تماس با ما</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="{{route('contactUs')}}">تماس با ما</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/faq.html">سوالات متداول</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="{{route('questions')}}">سوالات متداول</a>
                             </li>
 
                         </ul>
@@ -33,20 +33,20 @@
                     <div class="col-12 col-sm-4 mt-6 mt-sm-0 navbar-dark">
                         <h5 class="mb-4 text-white">خدمات</h5>
                         <ul class="navbar-nav list-unstyled mb-0">
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/#">طراحی سایت</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="{{route('webDesignService')}}">طراحی سایت</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/#">تولید محتوا</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="#">تولید محتوا</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/login.html">مشاوره تبلیغاتی</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="#">مشاوره تبلیغاتی</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-12 col-sm-4 mt-6 mt-sm-0 navbar-dark">
                         <h5 class="mb-4 text-white">قوانین</h5>
                         <ul class="navbar-nav list-unstyled mb-0">
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/terms-and-conditions.html">شرایط سایت</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="{{route('rules')}}">حقوق پیمانکار و کارفرما</a>
                             </li>
-                            <li class="mb-3 nav-item"><a class="nav-link" href="/front/privacy-policy.html">حریم خصوصی</a>
+                            <li class="mb-3 nav-item"><a class="nav-link" href="#">حریم خصوصی</a>
                             </li>
                             <li class="nav-item"><a class="nav-link" href="/front/#">پشتیبانی</a>
                             </li>

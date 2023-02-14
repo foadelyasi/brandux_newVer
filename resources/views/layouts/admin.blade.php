@@ -233,7 +233,8 @@
                                     </a>
                                     <div
                                         class="dropdown-menu dropdown-menu-lg dropdown-menu-arrow dropdown-menu-right">
-                                        @if(\App\Models\Order::where('notification',1)->get() >0)
+
+                                        @if(\App\Models\Order::where('notification',1)->first() >0)
                                         <a href="{{route('order')}}" class="dropdown-item d-flex">
                                             <div>
                                                 <strong>سفارش جدیدی برای شما ثبت شده</strong>
@@ -242,7 +243,7 @@
                                         </a>
 
                                         @endif
-                                       @if(\App\Models\Comment::where('status',0)->get() > 0)
+                                       @if(\App\Models\Comment::where('status',0)->first() > 0)
                                         <a href="#" class="dropdown-item d-flex">
                                             <div>
                                                 <strong>تعدادی نظر جدید ثبت شده</strong>

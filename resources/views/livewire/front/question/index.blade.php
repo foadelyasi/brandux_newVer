@@ -7,7 +7,7 @@
                     <h1>سوالات متداول</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center bg-transparent p-0 m-0">
-                            <li class="breadcrumb-item"><a class="text-dark" href="{{route('home')}}">خانه</a>
+                            <li class="breadcrumb-item"><a class="text-dark" href="{{route('welcome')}}">خانه</a>
                             </li>
                             <li class="breadcrumb-item active text-primary" aria-current="page">سوالات متداول</li>
                         </ol>
@@ -30,7 +30,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-12 col-lg-6 mb-8 mb-lg-0 order-lg-1">
-                        <img src="assets/images/about/04.png" alt="Image" class="img-fluid">
+                        <img src="/front/assets/images/about/04.png" alt="Image" class="img-fluid">
                     </div>
                     <div class="col-12 col-lg-6 col-xl-5">
                         <div id="accordion2" class="accordion">
@@ -41,7 +41,7 @@
                                     </h6>
                                 </div>
                                 <div id="collapse4" class="collapse show" data-parent="#accordion2">
-                                    <div class="card-body text-muted"> در پکیج های اقتصادی شما قدرت سفارشی سازی کمتری نسبت به پلتفرم های اختصاصی دارید . در پلتفرم های اختصاصی کل سایت اعم از بک اند و فرانت اند و شکل گرافیکی سایت طبق سلیقه ی شما پیش خواهد رفت ولی در پکیج های اقتصادی طراحی سایت ما به شما پیشنهاد می دهیم که حداقل امکانات سایت نسبت به کسب و کار شما چه چیز هایی باید باشد </div>
+                                    <div class="card-body text-justify text-muted"> در پکیج های اقتصادی شما قدرت سفارشی سازی کمتری نسبت به پلتفرم های اختصاصی دارید . در پلتفرم های اختصاصی کل سایت اعم از بک اند و فرانت اند و شکل گرافیکی سایت طبق سلیقه ی شما پیش خواهد رفت ولی در پکیج های اقتصادی طراحی سایت ما به شما پیشنهاد می دهیم که حداقل امکانات سایت نسبت به کسب و کار شما چه چیز هایی باید باشد </div>
                                 </div>
                             </div>
                             <div class="card border-0 mb-2">
@@ -51,7 +51,7 @@
                                     </h6>
                                 </div>
                                 <div id="collapse5" class="collapse" data-parent="#accordion2">
-                                    <div class="card-body text-muted">تیم برنداکس برای ارائه ی خدماتش با هیچ شخص واسطه و یا فریلنسری خارج از گروه خود کار نمی کند و تمام خدمات توسط خود اعظای گروه انجام می شود</div>
+                                    <div class="card-body text-justify text-muted">تیم برنداکس برای ارائه ی خدماتش با هیچ شخص واسطه و یا فریلنسری خارج از گروه خود کار نمی کند و تمام خدمات توسط خود اعظای گروه انجام می شود</div>
                                 </div>
                             </div>
                             <div class="card border-0">
@@ -61,7 +61,7 @@
                                     </h6>
                                 </div>
                                 <div id="collapse6" class="collapse" data-parent="#accordion2">
-                                    <div class="card-body text-muted">یکی از بزرگترین مزایای برنداکس این است که شما چند دسته از خدمات تبلیغاتی و برندینگ را بطور یک جا میتوانید از آن بخواهید. طراحی سایت ، تبلیغات میدانی ، و خدمات سئو و مشاوره ی تبلیغاتی از خدماتیست که نمی توانید بطور یک جا در مجموعه ی دیگری یافت کنید </div>
+                                    <div class="card-body text-justify text-muted">یکی از بزرگترین مزایای برنداکس این است که شما چند دسته از خدمات تبلیغاتی و برندینگ را بطور یک جا میتوانید از آن بخواهید. طراحی سایت ، تبلیغات میدانی ، و خدمات سئو و مشاوره ی تبلیغاتی از خدماتیست که نمی توانید بطور یک جا در مجموعه ی دیگری یافت کنید </div>
                                 </div>
                             </div>
                         </div>

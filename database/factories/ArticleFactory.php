@@ -15,7 +15,7 @@ class ArticleFactory extends Factory
     {
         return [
             'title'=>$this->faker->title(),
-            'category_id'=>24,
+            'category_id'=>$this->faker->numberBetween(4,7),
              'slug'=>$this->faker->slug(),
             'description'=>$this->faker->text(850),
             'meta_description'=>$this->faker->text(90),
