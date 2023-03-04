@@ -1,3 +1,15 @@
+
+@section('title')
+    <title>خدمات طراحی سایت</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" {{$title}}" />
+    <meta name="keywords" content="خدمات طراحی سایت,طراحی سایت در مازندران,قیمت طراحی سایت" />
+@endsection
+
+
+
 <div>
 <div class="page-content">
 

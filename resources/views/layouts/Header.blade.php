@@ -5,13 +5,12 @@
 
     <!-- meta tags -->
     <meta charset="utf-8">
-    <meta name="keywords" content="bootstrap 4, premium, multipurpose, sass, scss, saas" />
-    <meta name="description" content="Bootstrap 4 Landing Page Template" />
-    <meta name="author" content="www.themeht.com" />
+    <meta name="author" content="foad elyasi">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    @yield('meta')
     <!-- Title -->
-    <title>برنداکس</title>
+    @yield('title')
 
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="/front/assets/images/favicon.ico" />
@@ -25,7 +24,7 @@
     <link href="/admin/assets/plugins/sweet-alert/sweetalert.css" rel="stylesheet" />
     <link href="/admin/assets/css/loader.css" rel="stylesheet" />
 
-
+{{--    <link href="{{asset('/css/front.css')}}" rel="stylesheet" />--}}
 
     <!-- inject css end -->
     @livewireStyles
@@ -57,7 +56,7 @@
                     <!--menu start-->
                     <div class="col d-flex align-items-center justify-content-between">
                         <a class="navbar-brand logo text-white h2 mb-0" href="/front/index.html">
-                           <img class="img-fluid" width="150" src="/front/assets/images/BRANDUX-LOGO.PNG">
+                           <img class="img-fluid" width="150" src="/front/assets/images/BRANDUX-LOGOW.PNG">
                         </a>
                         <nav class="navbar navbar-expand-lg mr-auto">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="تغییر ناوبری"> <span class="navbar-toggler-icon"></span>
@@ -80,7 +79,7 @@
                             </div>
                         </nav>
 
-                        <a href="{{route('ShoppingCart')}}"><img  alt="shoppingCart" width="50" class="img-fluid m-2" src="/front/assets/img/shopping-cart(2).png"></a>
+                       @auth <a href="{{route('ShoppingCart')}}"><img  alt="shoppingCart" width="50" class="img-fluid m-2" src="/front/assets/img/shopping-cart(2).png"></a>@endauth
                         <a class="btn btn-dark mr-8 d-none d-lg-block" href="/front/#">حساب کاربری</a>
                     </div>
                     <!--menu end-->
@@ -118,7 +117,8 @@
                                     </ul>
                                 </div>
                             </nav>
-                            <a class="btn btn-primary mr-8 d-none d-lg-block" href="#">اکنون بخرید</a>
+                            @auth<a href="{{route('ShoppingCart')}}"><img  alt="shoppingCart" width="50" class="img-fluid m-2" src="/front/assets/img/shopping-cart(2).png"></a>@endauth
+                            <a class="btn btn-dark mr-8 d-none d-lg-block" href="/front/#">حساب کاربری</a>
                         </div>
                         <!--menu end-->
                     </div>

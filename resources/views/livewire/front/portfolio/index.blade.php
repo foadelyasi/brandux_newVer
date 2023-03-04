@@ -1,3 +1,14 @@
+
+@section('title')
+    <title>نمونه کار ها</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" نمونه کار های گروه طراحی برنداکس" />
+@endsection
+
+
+
 <div>
     <section class="position-relative">
         <div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1898" height="315"></canvas></div>

@@ -103,6 +103,7 @@
 <script src="/front/assets/js/xzoom.js"></script>
 <script src="/admin/assets/plugins/sweet-alert/sweetalert.min.js"></script>
 
+{{-- <script src="/js/front.js"></script>--}}
 
 <script>
     $(".xzoom").xzoom({tint: '#333', Xoffset: 15});

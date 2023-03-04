@@ -1,3 +1,10 @@
+@section('title')
+<title>گروه برنداکس</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content="گروه برنداکس مجموعه ای از خدمات برندینگ ، اعم از طراحی سایت ، تولید محتوا و طراحی گرافیکی بنر ، کارت ویزیت ، تراکت و ... را به شما ارائه می دهد " />
+@endsection
 <div>
     <!--hero section start-->
 

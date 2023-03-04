@@ -12,7 +12,7 @@ use Livewire\Component;
 
 class SingleProduct extends Component
 {
-    public $product,$key,$properties,$totalPrice,$price,$attrName,$attrVal,$ogPrice,$qty,$description,
+    public $product,$key,$properties,$totalPrice,$price,$attrName,$attrVal,$ogPrice,$qty,$description,$meta_keywords,
     $comment,$username,$product_id,$star;
 
     public function mount($slug){
@@ -23,6 +23,9 @@ class SingleProduct extends Component
         $this->totalPrice=$this->product->price;
         $this->ogPrice=$this->product->price;
         $this->description=$product->description;
+        $arrayKeywords=unserialize($this->meta_keywords);
+        $keywords=implode(',',$arrayKeywords);
+        $this->meta_keywords=$keywords;
 
     }
     protected $listeners=['account','valueAttr','rating','forgotRatingSession','forgotCommentSession'];

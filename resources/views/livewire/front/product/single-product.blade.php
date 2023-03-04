@@ -1,3 +1,14 @@
+
+@section('title')
+    <title>{{$title}}</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" {{$title}}" />
+    <meta name="keywords" content="{{$keywords}}" />
+@endsection
+
+
 <div>
 
     <style>

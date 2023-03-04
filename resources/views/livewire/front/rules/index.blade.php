@@ -1,3 +1,15 @@
+
+
+@section('title')
+    <title>حقوق کارفرما و کارگذار</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" حقوق کارفرما و کارگذار در قبال خدمات برنداکس" />
+@endsection
+
+
+
 <div>
     <section class="position-relative">
         <div id="particles-js"><canvas class="particles-js-canvas-el" width="1898" height="315" style="width: 100%; height: 100%;"></canvas></div>

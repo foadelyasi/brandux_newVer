@@ -1,3 +1,13 @@
+@section('title')
+    <title>محصولات</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" محصولات گروه طراحی برنداکس | کارت ویزیت ، تراکت ، بنر ، پاکت و ..." />
+@endsection
+
+
+
 <div>
 
 

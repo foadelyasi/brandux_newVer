@@ -1,3 +1,13 @@
+@section('title')
+    <title>بررسی نهایی سفارش</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content="بررسی نهایی سفارش" />
+@endsection
+
+
+
 <div>
 
     <section class="position-relative">

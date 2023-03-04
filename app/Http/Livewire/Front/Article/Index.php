@@ -9,6 +9,7 @@ use Livewire\Component;
 class Index extends Component
 {
 
+    protected $paginationTheme="bootstrap";
     public function render()
     {
         $articles=Article::latest()->paginate(5);

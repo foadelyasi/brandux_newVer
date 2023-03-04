@@ -1,3 +1,12 @@
+@section('title')
+    <title>{{$title}}</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" {{$meta_description}}" />
+@endsection
+
+
 <div>
     <section class="position-relative">
         <div id="particles-js">

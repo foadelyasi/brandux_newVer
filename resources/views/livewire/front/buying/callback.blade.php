@@ -1,3 +1,13 @@
+
+@section('title')
+    <title>بررسی پرداخت</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" بررسی پرداخت" />
+@endsection
+
+
 <div>
 
     <section class="position-relative">

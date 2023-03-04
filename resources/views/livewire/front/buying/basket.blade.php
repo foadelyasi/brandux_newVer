@@ -1,3 +1,15 @@
+
+@section('title')
+    <title>سبد خرید</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" سبد خرید " />
+@endsection
+
+
+
+
 <div>
     <style>
         .btn-product{

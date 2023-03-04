@@ -1,3 +1,11 @@
+@section('title')
+    <title>درباره ی برنداکس</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content="گروه برنداکس مجموعه ای از خدمات برندینگ ، اعم از طراحی سایت ، تولید محتوا و طراحی گرافیکی بنر ، کارت ویزیت ، تراکت و ... را به شما ارائه می دهد " />
+@endsection
+
 <div>
     <section class="position-relative">
         <div id="particles-js"><canvas class="particles-js-canvas-el" width="1898" height="315" style="width: 100%; height: 100%;"></canvas></div>

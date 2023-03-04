@@ -1,3 +1,14 @@
+
+@section('title')
+    <title>{{$title}}</title>
+@endsection
+
+@section('meta')
+    <meta name="description" content=" {{$title}}" />
+@endsection
+
+
+
 <div>
     <section class="position-relative">
         <div id="particles-js">
@@ -74,11 +85,11 @@
                         </div>
                     </div>
                     <div class="col-lg-5 col-12">
-                        <h2 class="title">{{$portfolio->title}}</h2>
-                        <p class="lead mb-5">{{$portfolio->description}}.</p>
+                        <h2 class="title">{{$title}}</h2>
+                        <p class="lead mb-5">{{$description}}.</p>
                         <ul class="cases-meta list-unstyled text-muted">
 
-                            <li><span class="text-dark"> ساخته شده با: </span>{{$portfolio->made_by}}</li>
+                            <li><span class="text-dark"> ساخته شده با: </span>{{$made_by}}</li>
                         </ul>
                     </div>
                 </div>

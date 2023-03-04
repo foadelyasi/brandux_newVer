@@ -64,7 +64,7 @@ Route::get('/testtt',function (){
 
 });
 
-Route::get('/home',[HomeController::class,'home'])->name('home');
+Route::get('/home',[HomeController::class,'home'])->middleware('auth')->name('home');
 Route::get('/register',[AuthController::class,'register_view'])->name('register.view');
 Route::post('/user/store',[AuthController::class,'register'])->name('do.register');
 Route::get('/verification',[AuthController::class,'verify'])->name('verify.view');
@@ -75,37 +75,40 @@ Route::post('/send_code',[AuthController::class,'SendCode'])->name('send.code');
 Route::get('/test',[AuthController::class,'test']);
 
 //Admin//
-Route::get('/admin/permission',Role::class)->name('role');
-Route::get('/admin/user',User::class)->name('user');
-Route::get('/admin/user/edit/{id}',UserEdit::class)->name('user.edit');
-Route::get('/admin/category',Category::class)->name('category');
-Route::get('/admin/product',Product::class)->name('product');
-Route::get('/admin/product/edit/{id}',[\App\Http\Controllers\Admin\ProductController::class,'edit'])->name('product.edit');
-Route::get('/admin/product/edit/update/{id}',[\App\Http\Controllers\Admin\ProductController::class,'update'])->name('product.update');
-Route::get('/admin/attr',Attr::class)->name('attr');
-Route::get('/admin/AddAttrToProduct',AddAttrToProduct::class)->name('AddAttrToProduct');
-Route::get('/admin/order',Order::class)->name('order');
-Route::get('/admin/order/detail/{id}',OrderDetail::class)->name('detailOrder');
-Route::get('/admin/coupon',Coupon::class)->name('coupon');
-Route::get('/admin/Portfolio',Portfolio::class)->name('Portfolio');
-Route::get('/admin/Portfolio/edit/{id}',EditPortfolio::class)->name('editPortfolio');
-Route::get('/admin/article/create',[Article::class,'create'])->name('createArticle');
-Route::post('/admin/article/store',[Article::class,'store'])->name('storeArticle');
-Route::get('/admin/article/list',[Article::class,'index'])->name('listArticle');
-Route::get('/admin/article/edit/{id}',[Article::class,'edit'])->name('edit.article');
-Route::patch('/admin/article/edit/update/{id}',[Article::class,'update'])->name('update.article');
-Route::delete('/admin/article/edit/delete/{id}',[Article::class,'delete'])->name('delete.article');
-Route::post('/admin/article/ckeditor',[Article::class,'upload'])->name('ckeditor.upload');
+Route::group(['middleware'=>['auth']],function (){
+    Route::get('/admin/permission',Role::class)->name('role');
+    Route::get('/admin/user',User::class)->name('user');
+    Route::get('/admin/user/edit/{id}',UserEdit::class)->name('user.edit');
+    Route::get('/admin/category',Category::class)->name('category');
+    Route::get('/admin/product',Product::class)->name('product');
+    Route::get('/admin/product/edit/{id}',[\App\Http\Controllers\Admin\ProductController::class,'edit'])->name('product.edit');
+    Route::get('/admin/product/edit/update/{id}',[\App\Http\Controllers\Admin\ProductController::class,'update'])->name('product.update');
+    Route::get('/admin/attr',Attr::class)->name('attr');
+    Route::get('/admin/AddAttrToProduct',AddAttrToProduct::class)->name('AddAttrToProduct');
+    Route::get('/admin/order',Order::class)->name('order');
+    Route::get('/admin/order/detail/{id}',OrderDetail::class)->name('detailOrder');
+    Route::get('/admin/coupon',Coupon::class)->name('coupon');
+    Route::get('/admin/Portfolio',Portfolio::class)->name('Portfolio');
+    Route::get('/admin/Portfolio/edit/{id}',EditPortfolio::class)->name('editPortfolio');
+    Route::get('/admin/article/create',[Article::class,'create'])->name('createArticle');
+    Route::post('/admin/article/store',[Article::class,'store'])->name('storeArticle');
+    Route::get('/admin/article/list',[Article::class,'index'])->name('listArticle');
+    Route::get('/admin/article/edit/{id}',[Article::class,'edit'])->name('edit.article');
+    Route::patch('/admin/article/edit/update/{id}',[Article::class,'update'])->name('update.article');
+    Route::delete('/admin/article/edit/delete/{id}',[Article::class,'delete'])->name('delete.article');
+    Route::post('/admin/article/ckeditor',[Article::class,'upload'])->name('ckeditor.upload');
 
 // UserPannel//
 
-Route::get('/my-account',[\App\Http\Controllers\Admin\MyDashboardController::class,'dashboard'])->name('MyDashboard');
-Route::get('/user/order',MyOrder::class)->name('user.order');
-Route::get('/user/order/details/{id}',MyOrderDetails::class)->name('user.order.derails');
+    Route::get('/my-account',[\App\Http\Controllers\Admin\MyDashboardController::class,'dashboard'])->name('MyDashboard');
+    Route::get('/user/order',MyOrder::class)->name('user.order');
+    Route::get('/user/order/details/{id}',MyOrderDetails::class)->name('user.order.derails');
+});
+
 
 
 //Front//
-Route::group(['middleware' => ['web']], function () {
+Route::group(['middleware' => ['web','HtmlMinifier']], function () {
 
     Route::get('/store',Store::class)->name('store');
     Route::get('/product/{slug}',SingleProduct::class)->name('SingleProduct');

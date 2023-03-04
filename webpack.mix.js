@@ -11,7 +11,22 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+
+
+mix.styles([
+    'resources/front/assets/css/theme-plugin.css',
+    'resources/front/assets/css/theme.min.css',
+    'resources/front/assets/css/xzoom.css',
+    'resources/admin/assets/plugins/sweet-alert/sweetalert.css',
+    'resources/admin/assets/css/loader.css',
+], 'public/css/front.css')
+    .scripts([
+        'resources/front/assets/js/theme-plugin.js',
+        'resources/front/assets/js/theme-script.js',
+        'resources/front/assets/js/xzoom.js',
+        'resources/admin/assets/plugins/sweet-alert/sweetalert.min.js',
+
+    ], 'public/js/front.js')
+
+
+
